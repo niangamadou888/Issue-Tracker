@@ -15,7 +15,7 @@ mongoose.connect(process.env.DB, {
 });
 const db = mongoose.connection;
 db.once("open", () => {
-  console.log("Cameron's app has connected to MongoDB.");
+  console.log("connected to MongoDB.");
 });
 db.on("error", err => {
   console.log(err);
